@@ -1,0 +1,59 @@
+//----------------------------------Creating the database of Attendance Tracker System----------------------------------------------------
+
+
+
+CREAET TABLE login{
+	username varchar(10),
+	password varcahr(10)
+}
+
+//student details
+CREATE TABLE student(
+	name varchar(50),
+	id varchar(5) PRIMARY KEY ,
+	division varchar(1),
+	DOB date,
+	Email varchar(50),
+	aadhar_no varchar(12),
+	X varchar(5),
+	XII varchar(5),
+	year varchar(2),
+	course varchar(30)
+);
+
+//Teacher details
+CREATE TABLE teacher(
+	name varchar(50),
+	id varchar(5) PRIMARY KEY ,
+	age varchar(3),
+	DOB date,
+	Email varchar(50),
+	aadhar_no varchar(12),
+	phone_no varchar(10),
+	X varchar(5),
+	XII varchar(5),
+	education varchar(30),
+	department varchar(50)
+); 
+
+//creating the attendance table 
+CREATE TABLE mech_FE_attendance(date varchar(10));
+CREATE TABLE bee_FE_attendance(date varchar(10));
+CREATE TABLE dsa_SE_attendance(date varchar(10));
+CREATE TABLE java_SE_attendance(date varchar(10));
+CREATE TABLE math_TE_attendance(date varchar(10));
+CREATE TABLE dbms_TE_attendance(date varchar(10));
+CREATE TABLE python_BE_attendance(date varchar(10));
+CREATE TABLE opp_BE_attendance(date varchar(10));
+
+// creating the performance of each student
+CREATE TABLE bee_FE_defaulter(id VARCHAR(5) primary key,name VARCHAR(30),email varchar(30),performance float);
+CREATE TABLE mech_FE_defaulter(id VARCHAR(5) primary key,name VARCHAR(30),email varchar(30),performance float);
+CREATE TABLE dsa_SE_defaulter(id VARCHAR(5) primary key,name VARCHAR(30),email varchar(30),performance float);
+CREATE TABLE java_SE_defaulter(id VARCHAR(5) primary key,name VARCHAR(30),email varchar(30),performance float);
+CREATE TABLE math_TE_defaulter(id VARCHAR(5) primary key,name VARCHAR(30),email varchar(30),performance float);
+CREATE TABLE dbms_TE_defaulter(id VARCHAR(5) primary key,name VARCHAR(30),email varchar(30),performance float);
+CREATE TABLE opp_BE_defaulter(id VARCHAR(5) primary key,name VARCHAR(30),email varchar(30),performance float);
+CREATE TABLE python_FE_defaulter(id VARCHAR(5) primary key,name VARCHAR(30),email varchar(30),performance float);
+
+
